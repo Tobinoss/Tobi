@@ -1,0 +1,271 @@
+body{  background-color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        color: black;
+    }
+    header{ 
+      display: flex;
+      align-items: center;
+         background: linear-gradient(to bottom, #111, #201010);
+        color: gold;
+        padding: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+    .LOGO-TEXT{
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 60px;
+
+    }
+    nav{ background-color:black;
+    padding: 10px;}
+    nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 90px; 
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color o.3s ease;
+    }
+    Nav ul li a:hover{
+        color: #200808;
+    }
+    main{
+        padding: 30px 20px;
+  
+    }
+    .scroll-area {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 20px;
+}
+
+    .CARD{
+        flex: 0 0 auto;
+        width: 500px;
+        background-color: white;
+        padding: 20PX;
+        margin:20px auto;
+        border-radius: 10px;
+        box-shadow: 0 4PX 8px rgb(15, 15, 14);
+        max-width: 800px;
+        transition: transform 0.3s ease;
+    }
+    .CARD:hover{
+      transform: scale(1.05) 
+    }
+    .CARD h2{
+      background: gold;
+      padding: 7PX;
+      width: 200PX;
+      border-radius: 20%;
+      box-shadow: 0 4px 8px ;
+    }
+    h1, h2, h3 {
+        margin-bottom: 10px;
+    }
+    .mypic{
+        width: 500px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .all-hairs{
+      width: 400px;
+      height: 500px;
+    }
+footer{
+        background-color:  #201010;
+        padding: 20px;
+        color: gold;
+       text-align: center;
+    }
+form{
+    display: flex; 
+    flex-direction: column;
+    gap: 0.5em;
+    margin: auto;
+    max-width: 300px;
+}
+input, textarea, button{
+
+    padding: 0.5em;
+    border: 1px;
+    border-radius: 5px;
+}
+textarea{
+    height: 100px;
+}
+button{
+    background-color: black;
+    color: white;
+}
+button:hover{
+    background-color: black;
+}
+.mypics{
+    width: 50px;
+    height: 50px;
+}
+ .parallax {
+    background-image: url( img/adam-stefanca-8FNgM0nN76s-unsplash.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+        .content{
+            height: 50px;
+            background-color:rgb(236, 156, 99) ;
+            text-align: center;
+            padding: 50px;}
+  .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .menu-icon span {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      transition: 0.3s ease;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .nav-links li {
+      list-style: none;
+    }
+
+    .nav-links li a {
+      color: white
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .nav-links li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      color:chocolate;
+    }
+     .nav-links {
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        margin-top: 15px;
+      }
+
+      .nav-links li,
+      .search-box,
+      .cta-button {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+      }
+
+
+    .search-box input {
+      padding: 6px 10px;
+      border: none;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    .cta-button {
+      padding: 8px 15px;
+      background-color: #FDF3E7;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #7a3131;
+    }
+    .cta-buttonn {
+      padding: 8px 15px;
+      background-color: black;
+      color: gold;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3 ease;
+    }
+
+    .cta-buttonn:hover {
+      background-color: white;
+      color: black;
+      transform: scale( 1.2);
+
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .menu-icon {
+        display: flex;
+      }
+
+     
+      .menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+      }
+
+      .search-box input {
+        width: 80%;
+      }
+    }
+    .TOBINO {
+      
+      height: 350PX;
+      width: auto
+    }
+    .Tagline{ 
+      font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  margin-top: 5px;
+  color: black'
+    }
+    .scroll-text{
+      color: white;
+    }
+    .back-home{
+      text-decoration: none;
+      color: white;
+      justify-content: center;
+      background-color: #2563EB;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+    }
+    .back-hom{
+      text-decoration: none;
+      color: white;
+      justify-content: center;}
+    .BH{
+      display: flex;
+      justify-content: center;
+      align-items: ;
+    }

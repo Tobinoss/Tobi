@@ -1,0 +1,238 @@
+* 
+    * {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+    background: linear-gradient(to bottom, #111, #201010);
+}
+
+#top-section {
+      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;;
+    }
+.section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+  .section-r, .section-r2 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+    background: linear-gradient(to top, #111, #201010);
+  }
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+#first-section, #second-section {
+  color: white;
+  padding: 2rem;
+
+}
+
+.cta-button, .cta-buttonn {
+  background-color: gold;
+  color: rgb(20, 7, 7);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+.cta-button:hover, .cta-buttonn:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+h1 {
+  color: gold;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+}
+.luxuryhair {
+  color: gold;
+}
+.premium {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Scroll indicator */
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: gold;
+  opacity: 0.7;
+}
+
+/* Navigation bar */
+nav {
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  position: absolute;  
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start;  
+  align-items: center;
+}
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+nav ul li a:hover {
+  color: gold;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px gold;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;       
+  align-items: center;
+  justify-content: flex-start; 
+  gap: 2rem;
+  list-style: none;
+  font-size: 25px;
+  width: auto;
+  position: static;
+  
+}
+   .nav-links li,
+   .search-box,
+   .cta-button {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        flex-direction: row;
+      }
+      .menu-toggle{
+      display: none;
+      }
+      .menu-icon{
+        width: 30px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .menu-icon span {
+        height: 4px;
+        background: white;
+
+      }
+      .menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+      }
+      .menu-container{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+      }
+   @media (min-width: 901px) {
+  .menu-toggle,
+  .menu-icon {
+    display: none;
+  }
+
+/* Flex layout for features and content */
+.just3, .features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Responsive image sizing */
+.pics2 {
+  max-width: 100%;
+  height: auto;
+  width: 250px;
+}
+
+/* Info blocks */
+.aboutus, .ourvision, .ourpromise, .whyus {
+  background: white;
+  margin: auto;
+  padding: 1rem;
+  color: black;
+  box-shadow: 0 4px 10px gold;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to bottom, #111, #201010);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.sm {
+  color: gold;
+}
+
+/* Responsive behavior */
+@media (max-width: 768p`.x) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .premium {
+    font-size: 1.5rem;
+  }
+
+  .pics2 {
+    width: 80%;
+    height: auto;
+  }
+
+  .just3 {
+    flex-direction: column;
+  }
+
+  .section, .section-r, .section-r2 {
+    padding: 1rem;
+  }
+}
+.main-nav {
+
+}
